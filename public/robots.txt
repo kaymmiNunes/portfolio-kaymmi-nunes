@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-kaymmi-nunes.pages.dev/sitemap.xml
