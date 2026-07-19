@@ -28,21 +28,47 @@ const navigationItems = [
   },
 ] as const;
 
+function prefersReducedMotion(): boolean {
+  return window.matchMedia(
+    "(prefers-reduced-motion: reduce)",
+  ).matches;
+}
+
+function scrollToPageTop() {
+  window.scrollTo({
+    top: 0,
+    left: 0,
+    behavior: prefersReducedMotion()
+      ? "auto"
+      : "smooth",
+  });
+}
+
 export function Sidebar() {
   return (
     <header className="sidebar-header">
-      <nav className="menu-nav" aria-label="Navegação principal">
+      <nav
+        className="menu-nav"
+        aria-label="Navegação principal"
+      >
         {navigationItems.map((item) => (
           <NavLink
             key={item.to}
             to={item.to}
             end={item.end}
+            onClick={scrollToPageTop}
             className={({ isActive }) =>
-              isActive ? "active-link" : undefined
+              isActive
+                ? "active-link"
+                : undefined
             }
-            aria-label={item.label}
+            aria-label={`${item.label} — voltar ao início da página`}
           >
-            <Icon name={item.icon} size={16} />
+            <Icon
+              name={item.icon}
+              size={16}
+            />
+
             <span>{item.label}</span>
           </NavLink>
         ))}
