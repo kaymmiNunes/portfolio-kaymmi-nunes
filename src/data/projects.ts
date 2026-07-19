@@ -380,7 +380,7 @@ export const projects: Project[] = [
       "Aplicação educacional e experimental",
     ],
 
-    collaborators: ["Erik de Souza Brito"],
+    collaborators: ["Erik de Brito Ramalho Alves"],
 
     links: [
       {
