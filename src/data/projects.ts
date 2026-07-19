@@ -392,6 +392,94 @@ export const projects: Project[] = [
 
     coverImage: "/projects/irrigacao-automatica/cover.webp",
   },
+  {
+  slug: "api-accg",
+  title: "API de Gerenciamento ACCG",
+  shortTitle: "API ACCG",
+  category: "Backend e API REST",
+  year: 2026,
+  status: "Projeto acadêmico",
+  featured: true,
+
+  summary:
+    "API REST para gerenciamento de usuários, associados, movimentações financeiras, cobranças e atualização automática de pagamentos por webhooks.",
+
+  description: [
+    "A API ACCG foi desenvolvida para centralizar e digitalizar os processos administrativos e financeiros de uma associação.",
+
+    "O sistema reúne o gerenciamento de usuários, empresas associadas, documentos, plano de contas, cobranças e histórico financeiro em uma arquitetura modular baseada no Django REST Framework.",
+
+    "A aplicação também possui suporte a webhooks de pagamento, permitindo que cobranças sejam atualizadas automaticamente após o recebimento de notificações enviadas por serviços externos.",
+  ],
+
+  objective:
+    "Centralizar os processos administrativos e financeiros da ACCG em uma API segura, documentada e preparada para integração com aplicações frontend e serviços de pagamento.",
+
+  roles: [
+    "Desenvolvimento backend em equipe",
+    "Construção de endpoints REST",
+    "Modelagem de dados com Django ORM",
+    "Implementação de regras de negócio",
+    "Documentação da API com Swagger",
+    "Organização e documentação técnica do projeto",
+  ],
+
+  technologies: [
+    "Python",
+    "Django",
+    "Django REST Framework",
+    "Django ORM",
+    "Swagger",
+    "OpenAPI 3",
+    "drf-spectacular",
+    "SQLite",
+    "PostgreSQL",
+    "JWT",
+    "Git",
+    "GitHub",
+  ],
+
+  features: [
+    "Cadastro e autenticação de usuários",
+    "Gerenciamento completo de associados",
+    "Upload de contratos e fichas cadastrais",
+    "Controle de status dos associados",
+    "Histórico cadastral e financeiro",
+    "Plano de contas hierárquico",
+    "Controle de receitas e despesas",
+    "Emissão e gerenciamento de cobranças",
+    "Atualização de pagamentos por webhooks",
+    "Exclusão lógica de registros financeiros",
+    "Documentação interativa com Swagger",
+    "Proteção de endpoints por autenticação",
+  ],
+
+  highlights: [
+    "Arquitetura backend modular",
+    "API REST documentada com OpenAPI",
+    "Integração preparada para gateways de pagamento",
+    "Aplicação de regras de negócio financeiras",
+    "Proteção de endpoints e gestão de segredos",
+    "Projeto acadêmico desenvolvido em equipe",
+  ],
+
+  collaborators: [
+    "Humberto Silva",
+    "João Vitor",
+    "Mateus Sebastian",
+    "Samuel Lucas",
+  ],
+
+  links: [
+    {
+      label: "Ver repositório",
+      href: "https://github.com/kaymmiNunes/api-accg",
+      type: "repository",
+    },
+  ],
+
+  coverImage: "/projects/api-accg/cover.webp",
+},
 ];
 
 export function getFeaturedProjects(): Project[] {
