@@ -233,7 +233,7 @@ ol {
 
 .eyebrow {
   color: var(--accent);
-
+  margin-top: 5px;
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.1em;
