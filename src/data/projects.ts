@@ -397,7 +397,7 @@ export const projects: Project[] = [
   title: "API de Gerenciamento ACCG",
   shortTitle: "API ACCG",
   category: "Backend e API REST",
-  year: 2026,
+  year: 2025,
   status: "Projeto acadêmico",
   featured: true,
 
