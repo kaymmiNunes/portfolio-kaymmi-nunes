@@ -1,0 +1,44 @@
+name: Qualidade do projeto
+
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Lint e build
+
+    runs-on: ubuntu-latest
+
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: ".nvmrc"
+          cache: npm
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Executar ESLint
+        run: npm run lint
+
+      - name: Verificar TypeScript e gerar build
+        run: npm run build
