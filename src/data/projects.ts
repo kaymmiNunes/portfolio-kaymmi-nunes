@@ -464,8 +464,8 @@ export const projects: Project[] = [
   ],
 
   collaborators: [
+    "José George",
     "Humberto Silva",
-    "João Vitor",
     "Mateus Sebastian",
     "Samuel Lucas",
   ],
