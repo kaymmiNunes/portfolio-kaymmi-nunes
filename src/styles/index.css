@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap");
 
 :root {
-  --background: #ece4d7;
-  --surface: #f8f4ed;
-  --surface-muted: #e9e0d2;
+  --background: #f3ece5;
+  --surface: #fffaf6;
+  --surface-muted: #eadbd1;
 
-  --text: #333333;
-  --text-muted: #5c5a56;
+  --text: #423531;
+  --text-muted: #74635d;
 
-  --accent: #c28e57;
-  --accent-soft: #dec19f;
+  --accent: #a96f5d;
+  --accent-soft: #dfbeb2;
 
-  --border: #d9c4aa;
+  --border: #d7c0b6;
 
   --sidebar-width: 50px;
   --content-width: 960px;
@@ -20,7 +20,11 @@
   --font-title: "Playfair Display", Georgia, serif;
   --font-body: "Lora", Georgia, serif;
 
-  --shadow: 0 12px 32px rgba(69, 54, 39, 0.07);
+  --shadow: 0 12px 32px rgba(77, 53, 47, 0.08);
+}
+
+.sidebar-header {
+  background: rgba(243, 236, 229, 0.94);
 }
 
 /* ==========================================================
@@ -145,8 +149,6 @@ ol {
   inset: 0 0 0 auto;
 
   width: var(--sidebar-width);
-
-  background: rgba(236, 228, 215, 0.94);
   border-left: 1px solid var(--border);
   backdrop-filter: blur(10px);
 
