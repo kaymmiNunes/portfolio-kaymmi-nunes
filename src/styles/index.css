@@ -231,6 +231,7 @@ ol {
 .eyebrow {
   color: var(--accent);
 
+  margin-top: 10px;
   font-size: 0.58rem;
   font-weight: 600;
   letter-spacing: 0.12em;
@@ -409,9 +410,6 @@ p {
   margin-bottom: 24px;
 }
 
-.section-heading h2 {
-  margin-top: 5px;
-}
 
 .section-heading--inline {
   max-width: none;
