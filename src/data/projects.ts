@@ -473,7 +473,7 @@ export const projects: Project[] = [
   links: [
     {
       label: "Ver repositório",
-      href: "https://github.com/kaymmiNunes/api-accg",
+      href: "https://github.com/kaymmiNunes/accg",
       type: "repository",
     },
   ],
