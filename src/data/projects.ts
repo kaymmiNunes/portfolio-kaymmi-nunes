@@ -323,7 +323,7 @@ export const projects: Project[] = [
     title: "Sistema de Irrigação Inteligente com ESP8266",
     shortTitle: "Irrigação Inteligente",
     category: "Automação, IoT e Sistemas Embarcados",
-    year: 2026,
+    year: 2023,
     status: "Projeto acadêmico",
     featured: true,
 
