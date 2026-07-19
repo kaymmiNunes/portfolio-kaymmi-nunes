@@ -11,7 +11,11 @@ export function HomePage() {
 
   return (
     <>
-      <DocumentTitle title="Kaymmi Nunes — Portfólio" />
+      <DocumentTitle
+        title="Kaymmi Nunes — Portfólio"
+        description={profile.introduction}
+        path="/"
+      />
 
       <section className="hero page-section">
         <p className="eyebrow">
@@ -53,6 +57,7 @@ export function HomePage() {
             href={profile.socialLinks.github}
             className="social-link"
             icon={false}
+            ariaLabel="Acessar o GitHub de Kaymmi Nunes"
           >
             <Icon name="github" size={13} />
             GitHub
@@ -62,6 +67,7 @@ export function HomePage() {
             href={profile.socialLinks.linkedin}
             className="social-link"
             icon={false}
+            ariaLabel="Acessar o LinkedIn de Kaymmi Nunes"
           >
             <Icon name="linkedin" size={13} />
             LinkedIn
@@ -71,6 +77,7 @@ export function HomePage() {
             href={profile.socialLinks.instagram}
             className="social-link"
             icon={false}
+            ariaLabel="Acessar o Instagram de Kaymmi Nunes"
           >
             <Icon name="instagram" size={13} />
             Instagram
@@ -78,7 +85,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section home-intro reveal">
+      <section className="page-section home-intro">
         <div className="section-heading">
           <p className="eyebrow">
             Perfil profissional
@@ -101,7 +108,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section reveal">
+      <section className="page-section">
         <div className="section-heading section-heading--inline">
           <div>
             <p className="eyebrow">
@@ -132,7 +139,7 @@ export function HomePage() {
         </div>
       </section>
 
-      <section className="page-section callout reveal">
+      <section className="page-section callout">
         <p className="eyebrow">
           Contato profissional
         </p>
